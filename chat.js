@@ -15,14 +15,15 @@ var myDataRef = new Firebase('https://vivid-inferno-6632.firebaseio.com/');
       myDataRef.on('child_added', function(snapshot) { // when chat arrives
         var message = snapshot.val(); // store the value of items added
         displayChatMessage(message.name, message.text); // pass name and text to displayChatMessage()
-      });
-      // scroll to the last message
+        console.log(snapshot.val());
+        // scroll to the last message
       $('#messages')[0].scrollTop = $('#messages')[0].scrollHeight;
-      console.log("I scrolled");
+      });
 
       function displayChatMessage(name, text) {
         $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messages'));
         $('#messages')[0].scrollTop = $('#messages')[0].scrollHeight;
       };
+      
 // end Firebase
 
