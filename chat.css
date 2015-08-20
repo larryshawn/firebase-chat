@@ -76,6 +76,6 @@ body {
 form {
   padding-right: 25px;
   position: fixed;
-  bottom: 0;
+  bottom: 2px;
   width: 86%;
 }
