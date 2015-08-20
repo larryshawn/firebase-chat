@@ -1,0 +1,80 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Nav Header */
+#nav-header {
+  position: static;
+  top: 0;
+  width: 100%;
+  height: 47px;
+  background-color: rgba(200, 200, 200, 0.15);
+  z-index: 100;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(255,255,255,1);
+  box-shadow: 0px 3px 5px 0px rgba(255,255,255,1);
+  border-bottom: rgba(178, 178, 178, 0.75);
+}
+
+#nav-header > span {
+  font-family: helvetica;
+  color: black;
+  font-size: 15px;
+  font-weight: 900;
+  margin: 14px 10px 0px 0;
+  display: inline-block;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#chat-container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#messages {
+  background-color: #FFF;
+  color: white;
+  min-height: 400px;
+  padding: 20px;
+  line-height: 2.3;
+  max-height: 345px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide the scrollbars in a gallery. Only works in webkit browsers */
+#messages::-webkit-scrollbar { 
+    display: none; 
+}
+
+#messages > div {
+  background-color: rgb(229, 229, 234);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  color: black;
+}
+
+form {
+  padding-right: 25px;
+}

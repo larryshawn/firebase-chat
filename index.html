@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <div id="nav-header">
+    <span>Chat here</span>
+  </div>
+  <div id="chat-container">
+    <!-- Firebase Chat -->
+    <div id='messages'></div>
+    <form>
+      <label for="nameInput">
+        <input class="form-control" type='text' id='nameInput' placeholder='Name'>
+      </label>
+      <label for="messageIn"></label>
+        <input class="form-control" type='text' id='messageInput' placeholder='Message'>
+      </label>
+    </form>
+  </div>
+
+  <!-- installs the Firebase JavaScript Library for backend -->
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>
