@@ -5,7 +5,9 @@
 // create firebase reference 
 var myDataRef = new Firebase('https://vivid-inferno-6632.firebaseio.com/');
       $('#messageInput').keypress(function (e) {
-        if (e.keyCode == 13) { // if enter key is pressed
+        button = $('#go');
+        console.log(button);
+        if (e.keyCode == 13 || $('button').click()) { // if enter key is pressed
           var name = $('#nameInput').val();
           var text = $('#messageInput').val();
           myDataRef.push({name: name, text: text}); // immediately push the user inputs to the database
@@ -26,3 +28,8 @@ var myDataRef = new Firebase('https://vivid-inferno-6632.firebaseio.com/');
       };
       
 // end Firebase
+
+$('#go').click(function() {
+        alert('Submit 2 clicked');
+    }
+);

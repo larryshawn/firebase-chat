@@ -93,3 +93,18 @@ form {
   bottom: 2px;
   width: 86%;
 }
+
+button#go {
+  display: inline;
+  right: 2px;
+  position: absolute;
+  bottom: 2px;
+  padding: 6px;
+  border-radius: 5px;
+  border-color: slateblue;
+  background-color: slateblue;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4em;
+}
