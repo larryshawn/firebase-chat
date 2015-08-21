@@ -94,7 +94,7 @@ form {
   width: 86%;
 }
 
-button#go {
+input#go {
   display: inline;
   right: 2px;
   position: absolute;
