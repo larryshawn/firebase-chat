@@ -51,6 +51,16 @@ body {
     width: 100%;
 }
 
+text {
+  font-family: 'Brush Script MT', cursive;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3em;
+  position: relative;
+  bottom: 20px;
+  color: slateblue;
+}
+
 #messages {
   background-color: #FFF;
   color: white;
@@ -71,6 +81,10 @@ body {
   padding: 20px;
   margin: 20px;
   color: black;
+}
+
+#messages > div:nth-child(odd) {
+    background-color: #CDCDE2;
 }
 
 form {

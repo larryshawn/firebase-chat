@@ -26,4 +26,3 @@ var myDataRef = new Firebase('https://vivid-inferno-6632.firebaseio.com/');
       };
       
 // end Firebase
-
