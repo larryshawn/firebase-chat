@@ -12,12 +12,7 @@ var myDataRef = new Firebase('https://vivid-inferno-6632.firebaseio.com/');
           $('#messageInput').val(''); // clear the messageInput box for the next message
         }
       });
-      $('#go').click(function() {
-          var name = $('#nameInput').val(); // get the value from nameInput field
-          var text = $('#messageInput').val(); // get the value from messageInput field
-          myDataRef.push({name: name, text: text}); // immediately push those user inputs to the database
-          $('#messageInput').val(''); // clear the messageInput box for the next message
-        });
+      
       myDataRef.on('child_added', function(snapshot) { // when chat arrives
         var message = snapshot.val(); // store the value of items added
         displayChatMessage(message.name, message.text); // pass name and text to displayChatMessage()
